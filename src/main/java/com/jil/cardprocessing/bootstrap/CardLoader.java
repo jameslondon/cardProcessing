@@ -27,9 +27,9 @@ public class CardLoader implements CommandLineRunner {
     }
 
     private synchronized void loadBeerObjects() {
-//        log.debug("Loading initial data. Count is: {}", cardRepository.count());
+        log.debug("Loading initial card data. Count is: {}", cardRepository.count());
 
-//        if (cardRepository.count() == 0) {
+        if (cardRepository.count() == 0) {
 
             Random random = new Random();
 
@@ -55,6 +55,6 @@ public class CardLoader implements CommandLineRunner {
                     .build());
             log.debug("Card Records loaded: {}", cardRepository.count());
         }
-//    }
+    }
 
 }
