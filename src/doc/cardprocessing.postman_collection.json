@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "bdf71e18-e676-4f48-9807-2c151e25e4ae",
+		"name": "cardprocessing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6904050"
+	},
+	"item": [
+		{
+			"name": "get all cards",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get a card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/card/df1d5263-3fce-4ff4-935b-1f34eb1d5c55",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"card",
+						"df1d5263-3fce-4ff4-935b-1f34eb1d5c55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post a card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"cardHolderName\": \"Newly posted\",\n            \"cardNumber\": \"1111 1111 0000 0000\",\n            \"balance\": 100.75,\n            \"spendLimit\": 5000.00\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"cardHolderName\": \"Newly posted\",\n            \"cardNumber\": \"1111 1111 0000 0000\",\n            \"balance\": 100.75,\n            \"spendLimit\": 5000.00\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"card"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
