@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.sql.*;
 import java.util.Random;
 
 @Slf4j
@@ -48,7 +47,49 @@ public class CardLoader implements CommandLineRunner {
                     .build());
 
             cardRepository.save(Card.builder()
+                    .cardHolderName("Jian Liu")
+                    .cardNumber("3333 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
+                    .cardHolderName("Jian Liu")
+                    .cardNumber("4444 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
                     .cardHolderName("John Smith")
+                    .cardNumber("5555 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
+                    .cardHolderName("Barry Williams")
+                    .cardNumber("6666 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
+                    .cardHolderName("Stephen Simms")
+                    .cardNumber("7777 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
+                    .cardHolderName("Richard O'a")
+                    .cardNumber("3333 0000 0000 0000")
+                    .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
+                    .spendLimit(BigDecimal.valueOf(2000.00))
+                    .build());
+
+            cardRepository.save(Card.builder()
+                    .cardHolderName("Sam Lin")
                     .cardNumber("3333 0000 0000 0000")
                     .balance(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .spendLimit(BigDecimal.valueOf(2000.00))

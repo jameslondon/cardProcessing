@@ -26,7 +26,7 @@ public class CardController {
     @GetMapping(produces = { "application/json" }, path = "card")
     public ResponseEntity<CardPagedList> listCards(@RequestParam(value = "pageNumber", required = false) Integer pageNumber,
                                                    @RequestParam(value = "pageSize", required = false) Integer pageSize,
-                                                   @RequestParam(value = "cardHolderNum", required = false) String cardHolderName,
+                                                   @RequestParam(value = "cardHolderName", required = false) String cardHolderName,
                                                    @RequestParam(value = "cardNumber", required = false) String cardNumber) {
 
         if (pageNumber == null || pageNumber < 0){
